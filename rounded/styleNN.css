@@ -1,0 +1,104 @@
+/* LES COULEURS ***********************************/
+/*************************************************/
+body{background:#757D88}
+ 
+/*Header*/
+div#header{background:#595D66}
+div#header h1{color: #FFF}
+
+/*Menu a onglets*/ 
+ul#nav a{background: #369A3D;color:#FFC}
+ul#nav a:hover{background: #CDFFA1;color:#006A35}
+ul#nav li.activelink a,ul#nav li.activelink a:hover{background: #FFF;color:#003}
+
+div#container{background:#FFF}
+
+/*Boîtes d'intro*/ 
+li#mission{background:#FA8700}
+li#services{background:#4B90AD}
+ul#intro li#more{background:#5D9B12}
+ul#intro h3{color:#FFF}
+
+/*Conteneur et blocks central-gauche*/
+div#block-cl {background:#4B90AD;}
+div#block-cl h3{color:#FFF;}
+div.blockcl {background:#EFF5F9;}
+
+/*Conteneur et blocks central-droite*/
+div#block-cr {background:#96CE5E;}
+div#block-cr h3{color:#FFF;}
+div.blockcr {background:#F2FAEB;}
+
+/*Conteneur et blocks centre-centre*/
+div#block-cc {background:#A191B0;}
+div#block-cc h3{color:#FFF;}
+div.blockcc {background:#FFF;}
+
+/*Conteneur et blocks droite*/
+div#side{background:#FFCC66;}
+div#side h3{color:#FFF;}
+div.blockr {background:#FFF9DB;}
+
+/*Modules ($Xoops_content)*/
+div#xcontent h2{color: #007BC4;}
+
+/*Footer*/
+div#footer{background:#595D66;color: #FFF;}
+div#footer p{color:#EEE}
+/**********************************************/
+/**********************************************/
+
+html,body{margin:0;padding:0}
+body{font: 85%/1.3 Verdana,Arial,sans-serif;text-align:center;padding-bottom:20px}
+p{margin-top:0}
+h1{font-size:200%}
+h2{font-size:160%}
+h3{font-size:120%}
+
+div#header{width:100%;overflow:hidden;position:fixed;text-align:left;}
+div#header h1,div#menu{width:770px;margin:0 auto;text-align:left}
+div#header h1{padding: 30px 0 10px;}
+
+ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
+ul#nav{float:right;font-size: 80%;}
+ul#nav li{float:left;margin-left: 3px;text-align: center}
+ul#nav a{float:left;width: 95px;padding: 5px 0;text-decoration:none;}
+
+div#container{width:770px;margin:0 auto 10px;padding:110px 0 10px;text-align:left;}
+div#content{float:left;display:inline;width:560px;margin:0 0 10px 10px}
+
+ul#intro,ul#intro li{list-style-type:none;margin:0;padding:0}
+ul#intro{width:100%;overflow:hidden;margin-bottom:10px}
+ul#intro li{float:left;width:180px;margin-right:10px;padding: 10px 0}
+ul#intro li#more{margin-right:0;}
+ul#intro p,ul#intro h3{margin:0;padding: 0 10px}
+ul#intro h3{text-transform:uppercase;padding-bottom:3px;}
+
+
+div#block-cl {width:370px;float:left;overflow:hidden;margin-right:5px;margin-bottom:10px;font-size:80%;}
+div#block-cl h3{font-variant:small-caps;text-indent:10px;font-weight:bold;margin:2px 0 -4px 0;font-size:130%;}
+div.blockcl {width:356px;margin-bottom:5px;margin-top:5px;margin-left:5px;padding:4px 2px 4px 2px}
+
+div#block-cr {width:180px;float:right;overflow:hidden;margin-bottom:10px;font-size:80%;}
+div#block-cr h3{font-variant:small-caps;text-indent:10px;font-weight:bold;margin:2px 0 -4px 0;font-size:130%;}
+div.blockcr {width:166px;margin-bottom:5px;margin-top:5px;margin-left:5px;padding:4px 2px 4px 2px;}
+
+div#block-cc {width:560px;float:left;overflow:hidden;margin-right:5px;margin-bottom:20px;font-size:80%;}
+div#block-cc h3{font-variant:small-caps;text-indent:10px;font-weight:bold;margin:2px 0 -4px 0;font-size:140%;}
+div.blockcc {width:545px;margin-bottom:5px;margin-top:5px;margin-left:5px;padding:4px 2px 4px 2px}
+
+div#xcontent {width:560px;float:left;}
+div#xcontent h2{margin: 10px 0;}
+
+div#side{float:right;display:inline;width: 180px;margin:0 10px 10px 0;font-size:80%;}
+div#side h3{font-variant:small-caps;text-indent:10px;font-weight:bold;margin:1px 0 -4px 0;font-size:130%;}
+div.blockr {width:162px;margin-bottom:5px;margin-top:5px;margin-left:5px;padding:4px 2px 4px 2px;}
+
+
+div.comments div{background: #EEE;margin-bottom:10px;float:left;}
+div.comments p{padding: 10px;margin:0}
+div.comments div.odd{background:#DAE6FE}
+
+
+div#footer{clear:both;width:750px;margin:0 10px 0;padding: 10px 0;text-align:center}
+div#footer p{font-size:70%;margin:0}

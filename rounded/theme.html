@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}>-<{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+<script type="text/javascript" src="<{$xoops_imageurl}>niftycube.js"></script>
+<script type="text/javascript" src="<{$xoops_imageurl}>niftylayout.js"></script>
+</head>
+
+<body>
+
+<div id="header"><h1>Nifty Corners pour Xoops</h1>
+
+<!-- Menu à onglets -->
+<div id="menu">
+<ul id="nav">
+<li id="home" class="activelink"><a href="<{$xoops_url}>">Accueil</a></li>
+<li id="who"><a href="<{$xoops_url}>/modules/news">Articles</a></li>
+<li id="prod"><a href="<{$xoops_url}>/modules/newbb">Forum</a></li>
+<li id="serv"><a href="<{$xoops_url}>/modules/mydownloads">downloads</a></li>
+<li id="cont"><a href="<{$xoops_url}>/modules/contact">Contact</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="container">
+<div id="content">
+
+<!-- **** Boîtes d'intro **** -->
+<ul id="intro">
+<li id="mission"><h3>Boîtes d'intro</h3><p>Le contenu de ces trois boîtes sont à renseigner dans le fichier thème.</li>
+<li id="services"><h3>Header</h3><p>Le header ainsi que le menu à onglets restent fixe en haut de la page sous firefox, sous Ie ils défilent avec le reste de la page.</p></li>
+<li id="more"><h3>Couleurs</h3><p>Toutes les boîtes sont fabriquées en css/javascript (aucune images). Les couleurs sont donc entièrement personnalisable dans le CSS.</p></li>
+</ul>
+
+<!-- *****Boucle d'affichage des blocs Centre-gauche***** --> 
+<{if $xoops_clblocks != ""}>
+<div id="block-cl">
+<{foreach item=block from=$xoops_clblocks}> 
+<h3><{$block.title}></h3>
+<div class="blockcl">
+<{$block.content}>
+</div>
+<{/foreach}>
+</div>
+<{/if}>
+
+<!-- *****Boucle d'affichage des blocs Centre-droite***** --> 
+<{if $xoops_crblocks != ""}>
+<div id="block-cr">
+<{foreach item=block from=$xoops_crblocks}> 
+<h3><{$block.title}></h3>
+<div class="blockcr">
+<{$block.content}>
+</div>
+<{/foreach}>
+</div>
+<{/if}>
+
+<!-- *****Boucle d'affichage des blocs Centre-centre***** --> 
+<{if $xoops_showcblock == 1}>
+<div id="block-cc">
+<{foreach item=block from=$xoops_ccblocks}> 
+<h3><{$block.title}></h3> 
+<div class="blockcc"><{$block.content}></div>
+<{/foreach}>
+</div>
+<{/if}>
+
+<!-- *****Affichage des pages de contenus des modules***** -->
+<div id="xcontent"><{$xoops_contents}></div>
+
+</div>
+
+<!-- *****Boucle d'affichage des blocs droite***** -->
+<div id="side">
+<{foreach item=block from=$xoops_rblocks}> 
+<h3><{$block.title}></h3>
+<div class="blockr">
+<{$block.content}>
+</div>
+<{/foreach}>
+</div>
+
+<!-- *****Footer***** --> 
+<div id="footer">
+<p><{$xoops_footer}><br/>Thème <a href="http://www.mercowart.com">Mercowart/<a href="http://xmad.mercowart.com">Xmad</a> directement issue du <a href="http://pro.html.it/niftycube/">Nifty Corners Cube</a></p>
+</div>
+
+</div>
+</body>
+</html>
